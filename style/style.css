@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(220, 5%, 22%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--very-dark-blue);
+    font-size: 1.6rem;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+main, .modal {
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    width: min(40rem, 90%);
+    padding: 4rem;
+    border-radius: 2rem;
+    margin: auto;
+    gap: 2rem;
+}
+
+main div {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--medium-grey);
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+}
+
+main h1 {
+    color: var(--white);
+    font-size: 2.8rem;
+    font-weight: 400;
+}
+
+main p {
+    font-size: 1.5rem;
+    color: var(--light-grey);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+li {
+    background-color: var(--medium-grey);
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-grey);
+    transition: background .5s;
+}
+
+button {
+    border-radius: 2rem;
+    height: 4rem;
+    border: none;
+    background-color: var(--orange);
+    font-weight: 600;
+    letter-spacing: .3rem;
+    color: var(--white);
+    transition: background .5s;
+}
+
+li:hover {
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--white);
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.modal {
+    text-align: center;
+}
+
+.modal img {
+    height: 15rem;
+    width: 22rem;
+    margin: auto;
+}
+
+.modal img + p{
+    color: var(--orange);
+    background-color: var(--medium-grey);
+    padding: 1rem;
+    width: 20rem;
+    border-radius: 1.8rem;
+    margin: auto;
+}
+
+.modal h2 + p{
+    color: var(--light-grey);
+}
+
+.modal h2 {
+    font-weight: 400;
+    color: var(--white);
+}
