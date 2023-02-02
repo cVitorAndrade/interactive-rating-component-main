@@ -12,6 +12,7 @@
     --medium-grey: hsl(220, 5%, 22%);
     --dark-blue: hsl(213, 19%, 18%);
     --very-dark-blue: hsl(216, 12%, 8%);
+    
     font-size: 62.5%;
 }
 
@@ -85,7 +86,7 @@ button {
 }
 
 li:hover {
-    background-color: var(--orange);
+    background-color: var(--light-grey);
     color: var(--white);
     cursor: pointer;
 }
